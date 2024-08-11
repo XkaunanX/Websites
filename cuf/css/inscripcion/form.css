@@ -1,0 +1,213 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+.inscripcion{
+	padding-top: 100px;
+	background-color:rgb(250, 250, 250);
+	height: 100vh;
+	z-index: -99;
+}
+.inscripcion .container{
+	height: fit-content;
+}
+/*form styles*/
+#msform {
+	font-family: montserrat, arial, verdana;
+	width: 600px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+	z-index: 50;
+}
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 0px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	
+	/*stacking fieldsets above each other*/
+	position:absolute;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 0px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+	width: 100px;
+	background: #007bff;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 10px 5px;
+  	text-decoration: none;
+  	font-size: 14px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	background-color: #0067d5;
+}
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+.fs-subtitle-x {
+	font-weight: normal;
+	font-size: 13px;
+    text-align: left;
+	color: #666;
+	margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+
+#progressbar li {
+	list-style-type: none;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+	
+}
+
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: white;
+	border-radius: 0px;
+	margin: 0 auto 5px auto;
+	z-index: -1;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; /*put it behind the numbers*/
+	
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #007bff;
+	color: white;
+}
+
+input[type=file]::file-selector-button {
+    border: none;
+    margin-right: 10px;
+    background: #007bff;
+    padding: 10px 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: montserrat, arial, verdana;
+  }
+
+  input[type=file]::file-selector-button:hover {
+    background: #007bff;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #0067d5;
+  }
+
+  #msform .file{
+        padding: 0px;
+  }
+  
+  .image-container{
+    width: 90%;
+    margin: 0 auto 30px auto;
+}
+.image-container img{
+    display: block;
+    position: relative;
+    max-width: 100%;
+    max-height: 400px;
+    margin: auto;
+}
+figcaption{
+    margin: 20px 0 30px 0;
+    text-align: center;
+    color: #2a292a;
+}
+footer{
+	background-image: none;
+	background-color:rgb(250, 250, 250) ;
+}
+
+@media (max-width:768px){
+	#msform fieldset {
+		background: rgba(255, 255, 255, 0);
+		border: 0 none;
+		border-radius: 0px;
+		/* box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4); */
+		box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.0);
+		padding: 20px 30px;
+		box-sizing: border-box;
+		/* width: 80%; */
+		width: 100%;
+		/* margin: 0 10%; */
+		margin: 0 0%;
+		position: absolute;
+	}
+
+	#msform {
+		font-family: montserrat, arial, verdana;
+		/* width: 600px; */
+		width: 100%;
+		margin: 50px auto;
+		text-align: center;
+		position: relative;
+		z-index: 50;
+	}
+}

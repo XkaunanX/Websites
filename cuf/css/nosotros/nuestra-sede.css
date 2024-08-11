@@ -1,0 +1,110 @@
+.nuestra-sede{
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 0px;
+    
+}
+
+.nuestra-sede .container {
+    max-width: 1400px;
+}
+
+.nuestra-sede .container.title{
+    text-align: center;
+    color: #10182c;
+    margin-bottom: 20px;
+    padding-left: 0px;
+}
+
+.nuestra-sede .container.title h2{
+    font-size: 2.5rem;
+}
+
+.nuestra-sede .container.title p{
+    margin-top: 20px;
+    padding-left: 15px;
+    color: #101e2c;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nuestra-sede .container.divided{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.nuestra-sede .container .left{
+    width: 50%;
+    padding: 20px;
+
+}
+
+.nuestra-sede .container .left p{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nuestra-sede .container .right{
+    width: 50%;
+}
+
+.nuestra-sede .container .right img{
+    width: 80%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.1);
+}
+
+
+@media (max-width: 762px){
+    .nuestra-sede{
+        padding-top: 0px;
+    }
+    
+    .nuestra-sede .container.divided{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nuestra-sede .container.title{
+        text-align: center;
+        color: #10182c;
+        margin-bottom: 0px;
+    }
+    
+    .nuestra-sede .container.title h2{
+        font-size: 2.5rem;
+    }
+    
+    .nuestra-sede .container.title p{
+        color: #101e2c;
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+    
+    .nuestra-sede .container .left{
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .nuestra-sede .container .left p{
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+    
+    .nuestra-sede .container .right{
+        width: 100%;
+    }
+ 
+    .nuestra-sede .container .right img{
+            width: 100%;
+            height: 100%;
+    }
+
+    .nuestra-sede .title {
+        padding-top: 100px;
+    }
+}

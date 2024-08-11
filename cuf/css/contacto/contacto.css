@@ -1,0 +1,86 @@
+body{
+   /* background-size:cover;
+    background-image: url(/img/textura-contacto.svg);*/
+    
+    background-color: rgb(250, 250, 250);
+}
+
+.container-form {
+  padding-top: 53px;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 2; 
+  }
+  
+ 
+    .container-form a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+    a, a:hover {
+      text-decoration: none !important; }
+  
+    .container-form .text-black {
+    color: #000; }
+  
+    .container-form .content {
+    padding: 7rem 0; }
+  
+    .container-form h2 {
+    font-size: 3.5rem;
+    font-weight: 700; }
+  
+    .container-form h3 {
+    font-size: 2rem;
+    font-weight: 700; }
+  
+    .container-form .form-control {
+    border: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 0; }
+
+    .container-form  .form-control:active, .form-control:focus {
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-color: #000; }
+  
+  .container-form .col-form-label {
+    color: #000; }
+  
+    .container-form .btn, .form-control {
+    height: 55px; }
+  
+    .container-form .btn:active, .btn:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  
+    .container-form label.error {
+    font-size: 12px;
+    color: red; }
+  
+    .container-form #message {
+    resize: none; }
+  
+    .container-form #form-message-warning, #form-message-success {
+    display: none; }
+  
+    .container-form #form-message-warning {
+    color: #B90B0B; }
+  
+    .container-form #form-message-success {
+    color: #55A44E;
+    font-size: 18px;
+    font-weight: bold; }
+  
+    .container-form .submitting {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000; }
+
+
+   

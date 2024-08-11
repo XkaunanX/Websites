@@ -1,0 +1,101 @@
+header{   
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    padding: 30px 0;
+    background-color: rgb(250, 250, 250);
+}
+
+nav .container{
+    background-color: rgba(250, 250, 250, 0.946); 
+    border-radius: 30px;
+}
+
+/*MODIFICION BOOSTRAP*/
+header svg{
+    transition: all 0.2s ease;
+}
+.navbar-light .navbar-toggler {
+    
+    color: rgba(0,0,0,1);
+}
+
+header button:hover{
+    filter: invert(100%);
+}
+
+header button:focus{
+    outline: 0px dotted; 
+    outline: 0px auto -webkit-focus-ring-color;
+}
+
+header nav .container button svg{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    &:hover{
+    /*filter: invert(100%);*/
+    cursor: pointer;
+    outline: none;
+    }
+}
+
+/*LOGO NAVBAR*/
+.navbar-brand{
+    width: 65px;
+    padding: 8px;
+}
+
+/*LINK NAVBAR NORMAL, HOVER, ACTIVE, VISITED*/
+.navbar-light .navbar-nav .nav-link {
+    color: #252525;
+    font-weight:600;
+    font-size: 1rem;
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #252525d0;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:active {
+    color: #252525d0;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:visited {
+    color: #252525d0;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+/*JAVA SCRIPT CLASS*/
+
+/*ANIMATION TRANSITION*/
+header{
+    transition: all 0.2s linear 0.08s;
+}
+
+/**/
+.off{
+    transform: translateY(-200px);
+}
+
+.solid{
+    background-color: rgba(250, 250, 250, 0);
+}
+
+@media (max-width: 762px){
+    .solid{
+        background-color: rgb(250, 250, 250);
+        position: fixed;
+    }
+
+    .off{
+        transform: translateY(0px);
+        position: fixed;
+    }
+}

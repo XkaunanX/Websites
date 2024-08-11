@@ -1,0 +1,81 @@
+/*HERO*/
+.hero-index{
+    padding-top: 100px;
+    height: 100vh;
+    background-image: url(/img/fondo-hero-index.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: rgba(250,250,250);
+}
+
+.hero-index .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-index .container .texto-left *{
+    margin-bottom: 30px;
+}
+
+.hero-index .container .texto-left img{
+    width: 36px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    rotate: 10deg;
+}
+
+.hero-index .container .texto-left h1{
+    font-size: 3.5rem;
+}
+
+.hero-index .container .texto-left p{
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.hero-index .container .texto-left a{
+    color: rgba(250,250,250);
+    border: 2px solid rgba(250,250,250);
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1.27rem;
+    text-decoration: none;
+}
+
+.hero-index .container .texto-left a:hover > i{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    transition: 0.1s ease;
+    opacity: 1;
+}
+
+
+.hero-index .container .texto-left i{
+    font-size: 0rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    transition: 0.1s ease;
+    opacity: 0;
+}
+
+@media (max-width:768px){
+    .hero-index{
+        padding-top: 100px;
+        height: 100vh;
+        background-image: url(/img/fondo-hero-index.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment:unset;
+        color: rgba(250,250,250);
+
+    }
+}

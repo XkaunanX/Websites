@@ -1,0 +1,108 @@
+.nosotros-directiva{
+    padding-top: 0px;
+    margin: 0 auto;
+    padding-bottom: 0px;
+    background-color: #EFF3F5;
+}
+
+.nosotros-directiva .container{
+    max-width: 1400px;
+}
+
+.nosotros-directiva .container.title{
+    padding-top: 50px;
+    text-align: center;
+    color: #10182c;
+    padding-bottom: 20px;
+    padding-left: 0px;
+}
+
+.nosotros-directiva .container.title h2{
+    font-size: 2.5rem;
+}
+
+.nosotros-directiva .container.title p{
+    margin-top: 20px;
+    padding-left: 15px;
+    color: #101e2c;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nosotros-directiva{
+    background-color: #EFF3F5;
+}
+
+.nosotros-directiva .container.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.nosotros-directiva .contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.nosotros-directiva .contenedor .texto{
+    opacity: 0.9;
+    width: 70%;
+}
+
+.nosotros-directiva .contenedor .texto h2{
+    font-size: 1.8rem;
+}
+
+.nosotros-directiva .contenedor .img{
+    margin-right: 80px;
+}
+
+.nosotros-directiva .contenedor .img img{
+    width: 200px;
+}
+
+.nosotros-directiva-abajo{
+    background-size: cover;
+    background-image: url(/img/wall-arriba.svg);
+    padding: 80px;
+}
+
+.nosotros-directiva-arriba{
+    background-size: cover;
+    background-image: url(/img/wavell.svg);
+    padding: 100px;
+}
+
+@media (max-width:768px){
+    .nosotros-directiva .contenedor{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .nosotros-directiva .contenedor .img{
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+
+    .nosotros-directiva .contenedor .img img{
+        width: 150px;
+    }
+
+    .nosotros-directiva .contenedor{
+        text-align: center;
+    }
+
+
+    .nosotros-directiva .container.title{
+        padding-bottom: 0px;
+    }
+
+}
