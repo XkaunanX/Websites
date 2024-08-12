@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Club leo las flores, Argentina, Buenos Aires"/>
+    <meta name="keywords" content="Leo, Leoismo, Las flores, ONG"/>
+    <meta name="author" content="Damian Piazza" />
+    <meta name="copyright" content="Club leo las flores"/>
+    <!--MAIN TITLE-->
+    <title>Club Leo Las Flores</title>
+    <link rel="icon" href="img/leo-clube-logo.png">
+    <!--CDN BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="stylesheet" href="css/contactar/contactar.css">
+    <!--SCROLL REVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--FUENTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <img src="img/leo.png" alt="Logo" class="navbar-brand">        
+                <button type="button" class="navbar-toggler bg-white" data-toggle="collapse" data-target="#firstnavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>     
+                <div class="navbar-collapse collapse" id="firstnavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link p-3">Nosotros <i class="fa-solid fa-arrow-left ubi"></i></a></li>
+                        <li class="nav-item"><a href="leos.html" class="nav-link p-3">Leos <i class="fa-solid fa-arrow-left ubi"></i></a></li>
+                        <li class="nav-item"><a href="leoismo.html" class="nav-link p-3">Leoismo <i class="fa-solid fa-arrow-left ubi"></i></a></li>
+                        <li class="nav-item"><a href="contacto.html" class="nav-link actual p-3">Contacto <i class="fa-solid fa-arrow-left ubi"></i></a></li>                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="espacio">
+
+    </section>
+
+    <section class="contactar">
+        <div class="contact form">
+            <!-- Formulario -->
+            <h3><strong>Envia un mensaje</strong></h3>
+            <form action="https://formspree.io/f/xjvdoawj" method="post">
+                <div class="formbox">
+
+                    <div class="row50">
+                        <div class="inputbox">
+                            <span>Nombre</span>
+                            <input type="text" placeholder="juan" name="nombre" id="nombre" required>
+                        </div>
+                        <div class="inputbox">
+                            <span>Apellido</span>
+                            <input type="text" placeholder="perez" name="apellido" id="apellido" required>
+                        </div>
+                    </div>
+                    <div class="row50">
+                        <div class="inputbox">
+                            <span>Email</span>
+                            <input type="email" placeholder="TuEmail@gmail.com" name="email" id="email" required>
+                        </div>
+                        <div class="inputbox">
+                            <span>Telefono</span>
+                            <input type="tel" placeholder="+54 11 2244445272" name="tel" id="tel" required>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="inputbox">
+                            <span>Mensaje</span>
+                            <Textarea placeholder="Escribe tu mensaje..." name="mensaje" id="mensaje" required></Textarea>
+                        </div>
+                    </div>
+
+                    <div class="row100">
+                        <div class="inputbox">
+                            <button type="submit" class="send">
+                                <span class="icon">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </span>
+                                <span class="text">
+                                    Enviar
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="contact info reveal-top">
+            <h3><strong>Informacion de contacto</strong></h3>
+            <div class="infobox">
+                <div>
+                    <span><ion-icon name="location-outline"></ion-icon> </span>
+                    <p>Carlos Pellegrini 766, Las Flores, Argentina</p>
+                </div>
+                <div>
+                    <span><ion-icon name="mail-outline"></ion-icon></span>
+                    <a href="mailto:clubleolasflores@gmail.com">clubleolasflores@gmail.com</a>
+                </div>
+                <div>
+                    <span><ion-icon name="call-outline"></ion-icon></span>
+                    <p>Tel: +54 11 2244-445272</p>
+                </div>
+                <ul class="sci">
+                    <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact map reveal-top">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d806.6720766094816!2d-59.09996816565573!3d-36.027904150908924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1677969246998!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <img src="img/leo-clube-logo-white.png" alt="">
+                </div>
+                <div class="terms">
+                    <p>Optar por ser socio de un club Leo le ayuda a crecer como individuo y como líder 
+                        porque se une a una familia global de jóvenes que hacen del mundo un lugar mejor.</p>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Contacto</h2>
+                <a href="https://www.google.com.ar/maps/@-36.0277484,-59.1001783,3a,79.3y,129.04h,84.52t/data=!3m6!1e1!3m4!1sMAbLNAJFQK_a0eoAf1tUNQ!2e0!7i13312!8i6656"><i class="fa-solid fa-location-dot"></i> Carlos Pellegrini 766, Las Flores,<br> Argentina</a>
+                <a href="mailto:clubleolasflores@gmail.com"><i class="fa-light fa-at"></i> E-mail: clubleolasflores@gmail.com</a>
+                <span><i class="fas fa-phone"></i> +54 11 2244-445272</span>
+            </div>
+    
+            <div class="box__footer">
+                <h2>Navegacion</h2>
+                <a href="index.html">Nosotros</a>
+                <a href="leos.html">Leos</a>
+                <a href="leoismo.html">Leoismo</a>
+                <a href="contacto.html">Contacto</a>              
+            </div>
+    
+            <div class="box__footer">
+                <h2>Social</h2>
+                <span class="redes">
+                    <a href="https://www.facebook.com/clubleolasflores/"><i class="fa-brands fa-facebook"></i></a>  
+                    <a href="https://www.instagram.com/clubleolasflores/?hl=es"><i class="fa-brands fa-instagram"></i></a>   
+                </span>
+                           
+            </div>
+    
+        </div>
+    
+        <div class="box__copyright">
+            <hr>
+            <p><strong>¡Seguinos en nuestras redes sociales para enterarte de todo!</strong></p>
+        </div>
+    </footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+<!--SCRIPT CUSTOM-->
+<script src="js/header.js"></script>
+<script src="js/ScrollReveal.js"></script>
+<script src="js/button.js"></script>
+ 
+</body>
+
+</html>

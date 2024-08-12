@@ -1,0 +1,103 @@
+.sigla-title{
+    padding-top: 100px;
+    text-align: center;
+    color: #101e2c;
+    padding-bottom: 100px;
+}
+
+.sigla-title h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.sigla-title p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.sigla{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sigla .container{
+    padding: 0px 40px;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.sigla .container .izquierda h2{
+    font-size: 2rem;
+}
+
+.sigla .container .izquierda p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.sigla .container .izquierda img{
+    display: none;
+}
+
+.sigla .container .derecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sigla .container .derecha img{
+   width: 300px;
+}
+
+@media (max-width: 1080px){
+
+    .sigla-title{
+        padding: 50px 50px 50px 50px;
+    }
+
+    .sigla-title p{
+        display: none;
+    }
+
+    .sigla .container{
+        flex-direction: column-reverse;
+    }
+
+    .sigla .container .derecha{
+        display: none;
+    }
+
+    .sigla .container .izquierda h2{
+        font-size: 2rem;
+        text-align: initial;
+    }
+    
+    .sigla .container .izquierda p{
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: initial;
+    }
+
+    .sigla .container .izquierda div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sigla .container .izquierda img{
+        display: inline;
+        width: 120px;
+        height: 120px;
+    }
+
+    .sigla .container .izquierda .hiden{
+        color: transparent;
+    }
+
+}

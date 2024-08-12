@@ -1,0 +1,81 @@
+.top{
+    height: 100vh;
+    padding: 30px;
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url(/img/leosimo-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: rgba(255,255,255);
+    display: flex;
+    align-items: center;
+}
+
+.top .izquierda{
+    width: 55%;
+    padding: 40px;
+    padding-left: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top .izquierda h1{
+    font-size: 3rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.top .izquierda p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.top .derecha{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top .derecha img{
+    width: 300px;
+}
+
+@media (max-width: 1080px){
+    .top{
+        flex-direction: column-reverse;
+        padding: 0px;
+        padding-top: 150px;
+        height: fit-content;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    .top .izquierda{
+        width: 100%;
+        padding: 20px;
+
+    }
+
+    .top .derecha{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .top .derecha img{
+        width: 100px;
+    }
+
+    .top .izquierda h1{
+        font-size: 3rem;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+    
+    .top .izquierda p{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+}

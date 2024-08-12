@@ -1,0 +1,83 @@
+.miembros-title{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #101e2c;
+}
+
+.miembros-title h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.miembros-title p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.miembros{
+    margin-bottom: 100px;
+}
+
+.miembros .galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.pad{
+    margin-top: 80px;
+}
+
+.miembros .galeria .tarjeta{
+    width: 25%;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.miembros .galeria .tarjeta img{
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: -4px 10px 13px 10px rgba(0, 0, 0, 0.034);
+}
+
+.miembros .galeria .tarjeta hr{
+    background-color: #101e2c;
+    height: 1px;
+    width: 30%;
+}
+
+.miembros .galeria .tarjeta h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.miembros .galeria .tarjeta h4{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform:lowercase;
+}
+
+.miembros .galeria .tarjeta p{
+    font-style: italic;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+@media (max-width: 1080px){
+    .miembros .galeria{
+        flex-direction: row;
+    }
+
+    .miembros .galeria .tarjeta{
+        width: 48%;
+    }
+}

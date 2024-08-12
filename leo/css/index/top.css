@@ -1,0 +1,78 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.top{
+    width: 100%;
+    padding: 30px;
+    background-image: url(/img/fondo-top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: rgba(255,255,255);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.top .container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.top .texto{
+    text-align: center;
+}
+
+.top .texto h1{
+    font-size: 4rem;
+    padding-bottom: 20px;
+}
+
+.top .texto p{
+    font-size: 2rem; 
+    padding-bottom: 25px;
+}
+
+.top .texto a{
+    padding: 10px 14px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: 2px solid;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.top .texto a i{
+    font-size: 0rem;
+    opacity: 0;
+    transition: all 0.1s ease;
+}
+
+.top .texto a:hover > i{
+    margin-left: 10px;
+    font-size: 1.1rem;
+    opacity: 1;
+    transition: all 0.1s ease;
+}
+
+@media (max-width: 576px){
+    .top{
+        height: 100vh;
+        padding-top: 90px;
+        padding-bottom: 40px;
+        padding-left: 0px;
+        padding-right: 0px;
+        background-attachment:scroll;
+    }
+
+    .top .texto h1{
+        font-size: 3rem;
+    }
+}

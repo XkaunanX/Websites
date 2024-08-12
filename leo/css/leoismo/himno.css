@@ -1,0 +1,71 @@
+.himno-title{
+    padding-top: 100px;
+    text-align: center;
+    color: #101e2c;
+    padding-bottom: 50px;
+}
+
+.himno-title h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.himno-title p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.himno{
+    width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.himno .container{
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+}
+
+.himno .container .izquierda{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.himno .container .izquierda p{
+    margin-left: 50px;
+    font-weight: 600;
+}
+
+.himno .container .derecha{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.himno .container .derecha iframe{
+    width: 500px;
+    height: 300px;
+}
+
+@media (max-width: 1400px){
+    .himno .container{
+        flex-direction: column;
+    }
+
+    .himno .container .izquierda{
+        width: 100%;
+        flex-wrap: wrap;
+        font-size: 1.3rem;
+        margin-bottom: 40px;
+    }
+
+    .himno .container .derecha{
+        width: 100%;
+    }
+
+}

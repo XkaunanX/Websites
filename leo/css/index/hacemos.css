@@ -1,0 +1,85 @@
+.pad{
+    padding-top: 80px;
+}
+
+.hacemos-title{
+    padding-top: 100px;
+    text-align: center;
+    color: #101e2c;
+}
+
+.hacemos-title h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hacemos-title p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.hacemos{
+    width: 100%;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.hacemos p{
+    font-weight: 500;
+}
+
+.hacemos h3{
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #101e2c;
+}
+
+.hacemos .galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.hacemos .galeria .tarjeta{
+    text-align: center;
+}
+
+.hacemos .galeria .tarjeta h4{
+    padding-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.hacemos .galeria img{
+    width: 230px;
+}
+
+@media (max-width: 1400px){
+    .hacemos h3{
+        text-align: center;
+    }
+
+    .hacemos-title{
+        padding-top: 50px;
+       padding-bottom: 50px;
+    }
+
+    .hacemos .galeria{
+       flex-wrap: wrap;
+       gap: 1px;
+       justify-content: center;
+    }
+
+    .hacemos .galeria .tarjeta{
+        width: 40%;
+        
+    }
+
+    .hacemos .galeria img{
+        width: 100%;
+    }
+}

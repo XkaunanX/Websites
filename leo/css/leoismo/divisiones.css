@@ -1,0 +1,128 @@
+.divisiones-title{
+    padding-top: 100px;
+    text-align: center;
+    color: #101e2c;
+    padding-bottom: 100px;
+}
+
+.divisiones-title h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.divisiones-title p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.divisiones{
+    height: fit-content;
+    padding: 40px;
+}
+
+.divisiones .container{
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 150px;
+}
+
+.divisiones .container.reverse{
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 150px;
+}
+
+.divisiones .container .izquierda{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}   
+
+.divisiones .container .izquierda .texto{
+    padding: 30px;
+}
+
+.divisiones .container .izquierda .texto h2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}  
+
+.divisiones .container .izquierda .texto p{
+    font-size: 1.1;
+    font-weight: 600;
+}
+
+.divisiones .container .derecha{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divisiones .container .derecha img{
+    filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.3));
+    width: 140px;
+}
+
+.divisiones .container.reverse .derecha img{
+    width: 320px;
+    filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.1));
+    border: 1px black;
+    border-style: dashed;
+}
+
+@media (max-width: 876px){
+
+    .divisiones{
+        padding: 20px;
+    }
+
+    .divisiones-title{
+        padding-top: 50px;
+        text-align: center;
+        color: #101e2c;
+        padding-bottom: 10px;
+    }
+
+    .divisiones .container{
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .divisiones .container .izquierda{
+        width: 100%;
+    }   
+
+    .divisiones .container .izquierda .texto{
+        padding: 10px;
+    }
+
+    .divisiones .container .izquierda h2{
+        text-align: center;
+    }
+
+    .divisiones .container .derecha{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .divisiones .container.reverse{
+        flex-direction: column;    
+    }
+
+    .divisiones .container.reverse .derecha img{
+        border: none;
+    }
+
+    .divisiones .container.reverse{
+        margin-bottom: 0px;
+    }
+
+}
