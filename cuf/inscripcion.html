@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--MY META-->
+    <meta name="description" content="Somos una institución de estudiantes Florenses, sin fines de lucro, ubicada en la ciudad de La Plata."/>
+    <meta name="keywords" content="CUF, Estudiante, Las flores, Universidad, UNLP"/>
+    <meta name="author" content="Damian Piazza" />
+    <meta name="copyright" content="CUF"/>
+    <!--MAIN TITLE-->
+    <title>C.U.F | INSCRIPCION</title>
+    <!--MAIN ICON-->
+    <link rel="icon" href="img/icon.png">
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--ICONSCOUT-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <!--CDN BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CUSTOM CSS TEMPLATE|ROOT-->
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="css//inscripcion/form.css">
+    <link rel="stylesheet" href="css//index/popup.css">
+    <!--SCROLL REVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body class="">
+    <div id="top"></div>
+
+    <div class="center-loader" id="onload">
+        <div class="typewriter">
+            <div class="slide"><i></i></div>
+            <div class="paper"></div>
+            <div class="keyboard"></div>
+        </div>
+    </div>
+
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <img src="img/icon-nav.png" alt="Logo" class="navbar-brand">
+                <button type="button" class="navbar-toggler bg-white" data-toggle="collapse" data-target="#firstnavbar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"/>
+                        <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/>
+                        <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"/>
+                      </svg>
+                </button>
+                <div class="navbar-collapse collapse" id="firstnavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link actual p-3">Inicio</a></li>
+                        <li class="nav-item"><a href="nosotros.html" class="nav-link p-3">Nosotros</a></li>
+                        <li class="nav-item"><a href="contacto.html" class="nav-link p-3">Contacto</a></li>
+                        <li class="nav-item"><a href="inscripcion.html" class="nav-link p-3">Inscripcion</a></li>                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+<div class="inscripcion">
+    <div class="container">
+        <!-- multistep form -->
+<form id="msform" method="POST" action="https://formsubmit.co/damipiazza11@gmail.com" enctype="multipart/form-data">
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">Datos del ingresante</li>
+      <li>Documentos</li>
+      <li>Foto carnet</li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset>
+      <h2 class="fs-title">Datos del ingresante</h2>
+      <h3 class="fs-subtitle">Primer paso</h3>
+      
+        <!--Form submit  <tipo de entrada="oculto" nombre="_next" valor="https://tudominio.co/gracias.html">-->
+        <input type="hidden" name="_autoresponse" value="tu mensaje personalizado">
+        
+
+      <input type="text" name="name" placeholder="Nombre" required/>
+      <input type="text" name="lastname" placeholder="Apellido" required/>
+      <input type="email" name="email" placeholder="Email" required/>
+      <input type="text" name="cel" placeholder="Telefono del ingresante" required>
+      <input type="button" name="next" class="next action-button" value="Siguiente" id="primero"/>
+    </fieldset>
+
+    <fieldset>
+      <h2 class="fs-title">Documentos necesarios para la inscripcion</h2>
+      <h3 class="fs-subtitle">Segundo paso</h3>
+      <h3 class="fs-subtitle-x">DNI ingresante <i class="fa-solid fa-address-card"></i></h3>
+      <input type="file" accept=".jpg, .jpeg, .png" name="dniingresante" id="dniingresante" class="file" required>
+      <h3 class="fs-subtitle-x">DNI padre/madre/tutor <i class="fa-solid fa-address-card"></i></h3>
+      <input type="file" accept=".jpg, .jpeg, .png" name="dnipadre" id="dnipadre" class="file" required>
+      <h3 class="fs-subtitle-x">Recibo de sueldo <i class="fa-solid fa-file-invoice-dollar"></i></h3>
+      <input type="file" accept=".jpg, .jpeg, .png" name="recibosueldo" id="recibosueldo" class="file" required>
+      <h3 class="fs-subtitle-x">Egresos <i class="fa-solid fa-receipt"></i></h3>
+      <input type="file" accept=".jpg, .jpeg, .png" name="Egresos" id="Egresos" multiple class="file" required>
+      <h3 class="fs-subtitle-x">Constancia de alumno regular <i class="fa-solid fa-file-signature"></i></h3>
+      <input type="file" accept=".jpg, .jpeg, .png" name="Constancia" id="Constancia" class="file" required>
+      <input type="button" name="previous" class="previous action-button" value="Anterior" />
+      <input type="button" name="next" class="next action-button" value="Siguiente" />
+    </fieldset>
+
+    <fieldset>
+      <h2 class="fs-title">Elija una foto carnet</h2>
+      <h3 class="fs-subtitle">Ultimo paso</h3>
+      <input type="file" accept=".jpg, .jpeg, .png" name="dniingresante" id="upload-button" class="file">
+      <figure class="image-container">
+        <img id="chosen-image">
+        <figcaption id="file-name"></figcaption>
+    </figure>
+      <input type="button" name="previous" class="previous action-button" value="Anterior" />
+      <input type="submit" value="Enviar" class="submit action-button">
+    </fieldset>
+  </form>
+    </div>
+        
+</div>
+
+    <footer>
+
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <img src="img/icon-nav.png" alt="">
+                </div>
+                <div class="terms">
+                    <p>Cada paso que dan hacia adelante los acerca un poco más a sus objetivos. 
+                        Cada desafío que enfrentan, les brinda la oportunidad de aprender, crecer y fortalecerse.</p>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Contacto</h2>
+                <a href="https://www.google.com.ar/maps/@-36.0130854,-59.0959911,3a,75y,128.37h,91.32t/data=!3m7!1e1!3m5!1sVa1aWeDGj6AvfvER345mjQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DVa1aWeDGj6AvfvER345mjQ%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D143.79153%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656"><i class="fa-solid fa-location-dot"></i> Esquina hipolito yrigoyen y belgrano.</a>
+                <a href="mailto:centrouniversitarioflorense22@gmail.com"><i class="fa-light fa-at"></i> centrouniversitarioflorense22@gmail.com</a>
+                <span class="molesto"><i class="fas fa-phone"></i> +54 11 2244-445272</span>
+            </div>
+    
+            <div class="box__footer">
+                <h2>Navegacion</h2>
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a> 
+                <a href="inscripcion.html">Inscripcion</a>              
+            </div>
+    
+            <div class="box__footer">
+                <h2>Social</h2>
+                <span class="icons">
+                    <a href="https://www.facebook.com/centrouniversitarioflorense/?locale=es_LA" class="icon"><i class="fab fa-facebook-f"></i></a>  
+                    <a href="https://www.instagram.com/reel/CfE_b4lAlri/?utm_source=ig_embed&utm_campaign=loading" class="icon"><i class="fab fa-twitter"></i></a>   
+                    <a href="https://twitter.com/CentroFlorense?t=STglFArPnM7IddcT5209VA&s=09" class="icon"><i class="fab fa-instagram"></i></a>   
+                </span>
+                           
+            </div>
+    
+        </div>
+    
+        <div class="box__copyright">
+            <hr>
+            <p>¡Seguinos en nuestras redes sociales para enterarte de todo!</p>
+        </div>
+    </footer>
+
+</body>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Form Custom -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/preview.js"></script>
+<script src="js/form.js"></script>
+<!--SCRIPT CUSTOM-->
+<script src="js/loader.js"></script>
+<script src="js/header.js"></script>
+<script src="js/ScrollReveal.js"></script>
+<script src="js/question.js"></script>
+<script src="js/sliders.js"></script>
+<script src="js/buttons-up.js"></script>
+
+</html>
